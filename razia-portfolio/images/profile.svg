@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b5c" />
+      <stop offset="50%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background circle with deep navy to light blue gradient -->
+  <circle cx="200" cy="200" r="190" fill="url(#bg-grad)" />
+
+  <!-- Subtle data/tech grid lines & data points -->
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.4" />
+  <circle cx="200" cy="200" r="130" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.2" />
+
+  <!-- Data chart decorative lines in background -->
+  <path d="M 60 250 L 110 220 L 160 235 L 210 180 L 260 200 L 310 150 L 340 165" fill="none" stroke="#38bdf8" stroke-width="2.5" opacity="0.3" />
+  <circle cx="110" cy="220" r="4" fill="#38bdf8" opacity="0.5" />
+  <circle cx="210" cy="180" r="4" fill="#38bdf8" opacity="0.5" />
+  <circle cx="310" cy="150" r="4" fill="#38bdf8" opacity="0.5" />
+
+  <!-- Professional Avatar Silhouette -->
+  <!-- Shoulders / Business Attire -->
+  <path d="M 90 360 C 90 280, 140 250, 200 250 C 260 250, 310 280, 310 360 Z" fill="#0f172a" filter="url(#shadow)" />
+  <!-- Lapel / Collar -->
+  <path d="M 160 250 L 200 310 L 240 250 L 220 250 L 200 280 L 180 250 Z" fill="#38bdf8" opacity="0.9" />
+  <path d="M 175 250 L 200 290 L 225 250 Z" fill="#ffffff" />
+  
+  <!-- Head & Neck -->
+  <rect x="180" y="215" width="40" height="45" rx="10" fill="#fbcfe8" />
+  <ellipse cx="200" cy="170" rx="55" ry="65" fill="#fce7f3" filter="url(#shadow)" />
+
+  <!-- Professional Hair / Styling -->
+  <path d="M 140 170 C 135 120, 160 95, 200 95 C 240 95, 265 120, 260 170 C 255 150, 240 120, 200 120 C 160 120, 145 150, 140 170 Z" fill="#1e293b" />
+  <path d="M 145 150 C 135 175, 135 220, 142 245 C 148 215, 155 170, 150 150 Z" fill="#1e293b" />
+  <path d="M 255 150 C 265 175, 265 220, 258 245 C 252 215, 245 170, 250 150 Z" fill="#1e293b" />
+
+  <!-- Professional Glasses -->
+  <rect x="162" y="155" width="32" height="22" rx="6" fill="none" stroke="#0f172a" stroke-width="3" />
+  <rect x="206" y="155" width="32" height="22" rx="6" fill="none" stroke="#0f172a" stroke-width="3" />
+  <line x1="194" y1="166" x2="206" y2="166" stroke="#0f172a" stroke-width="3" />
+
+  <!-- Friendly Smile & Eyes -->
+  <circle cx="178" cy="166" r="3.5" fill="#0f172a" />
+  <circle cx="222" cy="166" r="3.5" fill="#0f172a" />
+  <path d="M 188 198 Q 200 208 212 198" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Analytics Badge / Icon Floating on Bottom Right -->
+  <g transform="translate(285, 275)" filter="url(#shadow)">
+    <circle cx="35" cy="35" r="32" fill="#ffffff" stroke="#38bdf8" stroke-width="3" />
+    <rect x="20" y="38" width="6" height="14" rx="2" fill="#0284c7" />
+    <rect x="29" y="28" width="6" height="24" rx="2" fill="#2563eb" />
+    <rect x="38" y="22" width="6" height="30" rx="2" fill="#0ea5e9" />
+    <rect x="47" y="32" width="6" height="20" rx="2" fill="#38bdf8" />
+  </g>
+</svg>
